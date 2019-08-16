@@ -1,0 +1,49 @@
+{
+    "homepage": "https://www.sourcetrail.com/",
+    "description": "An interactive source explorer that simplifies navigation in existing source code.",
+    "license": {
+        "identifier": "Non-Commercial",
+        "url": "https://sites.fastspring.com/coatisoftware/product/buy_0"
+    },
+    "version": "2019.2.39",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.sourcetrail.com/downloads/2019.2.39/windows/32bit/portable",
+            "hash": "fdabaa7772b3e66f9b61a0ed5d51db03d69de0a9b122be182d503c73cfb60324",
+            "extract_dir": "Sourcetrail_2019_2_39_32bit_Portable",
+            "bin": "Sourcetrail_2019_2_39_32bit\\Sourcetrail.exe",
+            "shortcuts": [
+                [
+                    "Sourcetrail_2019_2_39_32bit\\Sourcetrail.exe",
+                    "Vieas"
+                ]
+            ]
+        },
+        "64bit": {
+            "url": "https://www.sourcetrail.com/downloads/2019.2.39/windows/64bit/portable",
+            "hash": "fdabaa7772b3e66f9b61a0ed5d51db03d69de0a9b122be182d503c73cfb60324",
+            "extract_dir": "Sourcetrail_2019_2_39_64bit_Portable",
+            "bin": "Sourcetrail_2019_2_39_64bit\\Sourcetrail.exe",
+            "shortcuts": [
+                [
+                    "Sourcetrail_2019_2_39_64bit\\Sourcetrail.exe",
+                    "Vieas"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://www.sourcetrail.com/downloads",
+        "regex": "Sourcetrail ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://www.sourcetrail.com/downloads/$version/windows/32bit/portable"
+            },
+            "64bit": {
+                "url": "https://www.sourcetrail.com/downloads/$version/windows/64bit/portable"
+            }
+        }
+    }
+}
