@@ -1,13 +1,13 @@
 {
     "homepage": "http://www.infoqube.biz/",
     "description": "An Information Management System that provides all the tools you need to simplify your life.",
-    "version": "0.9.113g",
+    "version": "0.9.114",
     "license": {
         "identifier": "Unknown",
         "url": "https://infoqubeim.com/drupal5/index.php?q=node/632"
     },
-    "url": "https://infoqubeim.com/downloadarea/InfoQube0.9.113gPortable.zip",
-    "hash": "316cdc39fc36c04ad8011a51c4b5159456f5cb6c7c95e85cf88fefa903133bf1",
+    "url": "https://infoqubeim.com/downloadarea/InfoQube0.9.114Portable.zip",
+    "hash": "4c345e75587f33002c695b31022dc81e798c94792b7c3226b5ab58fbd465c44e",
     "shortcuts": [
         [
             "InfoQube.exe",
