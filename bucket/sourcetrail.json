@@ -8,30 +8,29 @@
     "version": "2019.3.46",
     "architecture": {
         "32bit": {
-            "url": "https://www.sourcetrail.com/downloads/2019.3.46/windows/32bit/portable",
+            "url": "https://www.sourcetrail.com/downloads/2019.3.46/windows/32bit/portable.zip",
             "hash": "229549f580e0e7c4f1aa8c582933e8866daba8223695cef5182a54dbd19b1182",
-            "extract_dir": "Sourcetrail_2019_2_39_32bit_Portable",
-            "bin": "Sourcetrail_2019_2_39_32bit\\Sourcetrail.exe",
-            "shortcuts": [
-                [
-                    "Sourcetrail_2019_2_39_32bit\\Sourcetrail.exe",
-                    "Vieas"
-                ]
-            ]
+            "extract_dir": "Sourcetrail_2019_3_46_32bit_Portable"
         },
         "64bit": {
-            "url": "https://www.sourcetrail.com/downloads/2019.3.46/windows/64bit/portable",
+            "url": "https://www.sourcetrail.com/downloads/2019.3.46/windows/64bit/portable.zip",
             "hash": "0f62e714601d3f060dca4e59ba71080b4f4d1151c6cc86214259b96553bb1337",
-            "extract_dir": "Sourcetrail_2019_2_39_64bit_Portable",
-            "bin": "Sourcetrail_2019_2_39_64bit\\Sourcetrail.exe",
-            "shortcuts": [
-                [
-                    "Sourcetrail_2019_2_39_64bit\\Sourcetrail.exe",
-                    "Vieas"
-                ]
-            ]
+            "extract_dir": "Sourcetrail_2019_3_46_64bit_Portable"
         }
     },
+    "pre_install": [
+        "# remain plugins folder",
+        "Move-Item \"$dir\\Sourcetrail*\" \"$dir\\temp\"",
+        "Move-Item \"$dir\\temp*\\*\" \"$dir\"",
+        "Remove-Item \"$dir\\temp\" -Recurse -Force"
+    ],
+    "bin": "Sourcetrail.exe",
+    "shortcuts": [
+        [
+            "Sourcetrail.exe",
+            "Sourcetrail"
+        ]
+    ],
     "checkver": {
         "url": "https://www.sourcetrail.com/downloads",
         "regex": "Sourcetrail ([\\d.]+)"
@@ -39,10 +38,12 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://www.sourcetrail.com/downloads/$version/windows/32bit/portable"
+                "url": "https://www.sourcetrail.com/downloads/$version/windows/32bit/portable.zip",
+                "extract_dir": "Sourcetrail_$underscoreVersion_32bit_Portable"
             },
             "64bit": {
-                "url": "https://www.sourcetrail.com/downloads/$version/windows/64bit/portable"
+                "url": "https://www.sourcetrail.com/downloads/$version/windows/64bit/portable.zip",
+                "extract_dir": "Sourcetrail_$underscoreVersion_64bit_Portable"
             }
         }
     }
