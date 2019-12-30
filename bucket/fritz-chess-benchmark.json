@@ -1,0 +1,14 @@
+{
+    "homepage": "http://www.jens-hartmann.at/Fritzmarks/",
+    "description": "Showing CPU's speed for computer chess",
+    "version": "4.3",
+    "license": "Freeware",
+    "url": "http://www.jens-hartmann.at/Fritzmarks/Fritz%20Chess%20Benchmark.zip",
+    "hash": "sha1:893E69D89EB30FC5907B673DB7B1D92CF114770C",
+    "shortcuts": [
+        [
+            "Fritz Chess Benchmark.exe",
+            "Fritz Chess Benchmark"
+        ]
+    ]
+}
