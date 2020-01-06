@@ -1,0 +1,22 @@
+{
+    "description": "An advanced registry editor.",
+    "homepage": "https://mooc1.chaoxing.com/yunpan",
+    "license": "Proprietary",
+    "version": "4.3.0.21891",
+    "url": "http://s1.ananas.chaoxing.com/yunpan/ChaoXingYunPan_4.3.0.21891_Unicode.exe#/dl.7z",
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst.exe\" -Recurse",
+    "hash": "e608d0c154a54a351edf59658fba2864cd481caa2cf68bd2d1a4f8a04649d090",
+    "shortcuts": [
+        [
+            "ChaoXingCloudDisk.exe",
+            "ChaoXingCloudDisk"
+        ]
+    ],
+    "checkver": {
+        "url": "http://pan.ananas.chaoxing.com/floder/downloadurl",
+        "jsonpath": "$.versions"
+    },
+    "autoupdate": {
+        "url": "http://s1.ananas.chaoxing.com/yunpan/ChaoXingYunPan_$version_Unicode.exe#/dl.7z"
+    }
+}
