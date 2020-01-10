@@ -1,0 +1,27 @@
+{
+    "homepage": "http://www.xundupdf.com",
+    "description": "超轻巧的PDF阅读器",
+    "license": "Shareware",
+    "version": "2.7.3.6",
+    "url": "http://archive.xundupdf.com/xundu/pdf/20191231110248.9464/XDInstaller_2.7.3.6.exe#/dl.7z",
+    "hash": "md5:a742fa502441cfe6a02ddda00c79446d",
+    "post_install": "Remove-Item \"$dir\\uninst*\"",
+    "shortcuts": [
+        [
+            "MasterPDF.exe",
+            "XunDuPDF"
+        ]
+    ],
+    "checkver": {
+        "url": "http://api.pdfxd.com/pdf-service/v1/checkUpdate",
+        "regex": "version\":\"([\\d.]+)\".*/(?<date>[\\d.]+)/XDInstaller"
+    },
+    "autoupdate": {
+        "url": "http://archive.xundupdf.com/xundu/pdf/$matchDate/XDInstaller_$version.exe#/dl.7z",
+        "hash": {
+            "mode": "json",
+            "jsonpath": "$.data.md5",
+            "url": "http://api.pdfxd.com/pdf-service/v1/checkUpdate"
+        }
+    }
+}
