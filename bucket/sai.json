@@ -1,0 +1,29 @@
+{
+    "homepage": "https://www.systemax.jp/en/",
+    "description": "High quality and lightweight painting software",
+    "license": "Proprietary",
+    "version": "1.2.5",
+    "url": "https://www.systemax.jp/bin/sai-1.2.5-ful-en.exe#/dl.7z",
+    "hash": "61672f0bd566b1eabd015c3157aaeaeff541ade2d74e3c8c854ccd3ced505ac0",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\sai.ssd\")) { New-Item \"$dir\\sai.ssd\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\sysinfo.txt\")) { New-Item \"$dir\\sysinfo.txt\" | Out-Null }"
+    ],
+    "post_install": "Remove-Item \"$dir\\uninst*\"",
+    "shortcuts": [
+        [
+            "sai.exe",
+            "PaintTool SAI"
+        ]
+    ],
+    "persist": [
+        "sai.ssd",
+        "sysinfo.txt"
+    ],
+    "checkver": {
+        "regex": "Latest Version</TD><TD>Ver.([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.systemax.jp/bin/sai-$version-ful-en.exe#/dl.7z"
+    }
+}
