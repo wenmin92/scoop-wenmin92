@@ -1,0 +1,33 @@
+{
+    "homepage": "http://focusnote.com.cn",
+    "description": "精致的学习笔记软件",
+    "license": "Shareware",
+    "version": "2.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%201.0.12-110.exe.zip",
+            "hash": "",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\focusnote Setup*.exe\" \"$dir\"",
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\", \"$dir\\focusnote Setup*.exe\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "focusnote.exe",
+            "Focus Note"
+        ]
+    ],
+    "checkver": {
+        "url": "http://focusnote.com.cn/#/Log",
+        "regex": "focusnote%20Setup%20([-\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%201.0.12-110.exe.zip"
+    },
+    "note": "检查更新还有问题"
+}
