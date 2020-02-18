@@ -1,0 +1,40 @@
+{
+    "homepage": "http://www.duitasiwei.com",
+    "version": "1.0.0",
+    "license": "Freeware",
+    "description": "提供了PDF阅读、脑图制作、卡片记忆等工具，为知识的采集、整理、记忆等过程提供了辅助支撑",
+    "architecture": {
+        "64bit": {
+            "url": "http://www.duitasiwei.com/win/%E5%A0%86%E5%A1%94%E6%80%9D%E7%BB%B4%20Setup%201.0.0.exe#/dl.7z",
+            "hash": "sha512:6a2489ea146613f667368d92ae025f72e48a4c6afe7b7cbf0f9449b66ca0f291a42104b0ea781f112ad4a6827e454bd62fdb67cd5696a19a487c2b06af76cad1",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Rename-Item \"$dir\\堆塔思维.exe\" \"$dir\\duitasiwei.exe\" -Force",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "duitasiwei.exe",
+            "DuiTaSiWei"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.duitasiwei.com/win/latest.yml",
+        "regex": "Setup ([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://www.duitasiwei.com/win/%E5%A0%86%E5%A1%94%E6%80%9D%E7%BB%B4%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "http://www.duitasiwei.com/win/latest.yml",
+                    "regex": "sha512: $base64"
+                }
+            }
+        }
+    }
+}
