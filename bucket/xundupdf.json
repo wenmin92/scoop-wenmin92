@@ -2,9 +2,9 @@
     "homepage": "http://www.xundupdf.com",
     "description": "超轻巧的PDF阅读器",
     "license": "Shareware",
-    "version": "2.7.3.6",
-    "url": "http://archive.xundupdf.com/xundu/pdf/20191231110248.9464/XDInstaller_2.7.3.6.exe#/dl.7z",
-    "hash": "md5:a742fa502441cfe6a02ddda00c79446d",
+    "version": "2.7.3.8",
+    "url": "http://archive.xundupdf.com/xundu/pdf/20200113032445.0743/XDInstaller_2.7.3.8.exe#/dl.7z",
+    "hash": "md5:e23735895b2273ed57bca7965a53664f",
     "post_install": "Remove-Item \"$dir\\uninst*\"",
     "shortcuts": [
         [
