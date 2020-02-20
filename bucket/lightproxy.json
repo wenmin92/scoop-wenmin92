@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/alibaba/lightproxy",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "license": "Apache-2.0",
     "description": "Proxy & Debug tools based on whistle",
     "architecture": {
         "64bit": {
             "url": "https://gw.alipayobjects.com/os/LightProxy/LightProxy-Setup.exe#/dl.7z",
-            "hash": "92225c06996095a54ee8f0d3921f7ec549c9167540ddd9160c9278d92396d1c6",
+            "hash": "289810ec0e3bbe446bfa95a6fd31e5bde1bdf8b89af11dc019cab68e285875b0",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
