@@ -2,11 +2,11 @@
     "homepage": "http://focusnote.com.cn",
     "description": "精致的学习笔记软件",
     "license": "Shareware",
-    "version": "2.1.0",
+    "version": "1.0.13-111",
     "architecture": {
         "64bit": {
-            "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%201.0.12-110.exe.zip",
-            "hash": "",
+            "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%201.0.13-111.exe.zip",
+            "hash": "0da79aa536c5bc3023ce1c50633bdae7e170889a93db3bfc556e39e171b29170",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\focusnote Setup*.exe\" \"$dir\"",
@@ -23,11 +23,14 @@
         ]
     ],
     "checkver": {
-        "url": "http://focusnote.com.cn/#/Log",
-        "regex": "focusnote%20Setup%20([-\\d.]+).exe"
+        "url": "https://focusnote.com.cn/auth/getVersion?key=win",
+        "jsonpath": "$.data[:1].cvalue"
     },
     "autoupdate": {
-        "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%201.0.12-110.exe.zip"
-    },
-    "note": "检查更新还有问题"
+        "architecture": {
+            "64bit": {
+                "url": "https://qiniu.focusnote.com.cn/focusnote%20Setup%20$version.exe.zip"
+            }
+        }
+    }
 }
