@@ -1,0 +1,39 @@
+{
+    "version": "3.3.3",
+    "description": "A cross-platform cloud synchronization development tool for developers that includes input enhancement, code snippet management.",
+    "homepage": "https://codeexpander.com/en/",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://codeexpander.com/en/views/price.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/oncework/codeexpander/releases/download/3.3.x/CodeExpander.Setup.3.3.3.exe#/dl.7z",
+            "hash": "eb72a755574ac010abd5363ae99140bbc0fdfa0bb5c56c04f278e95d7ee48ab4",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": "CodeExpander.exe",
+    "shortcuts": [
+        [
+            "CodeExpander.exe",
+            "CodeExpander"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/oncework/codeexpander/releases/latest",
+        "regex": "CodeExpander.Setup.([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/oncework/codeexpander/releases/download/3.3.x/CodeExpander.Setup.$version.exe#/dl.7z"
+            }
+        }
+    }
+}
