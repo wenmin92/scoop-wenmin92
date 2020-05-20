@@ -2,9 +2,9 @@
     "homepage": "https://www.jisupdf.com/?ac=pdf",
     "description": "一款闪电般好用的PDF阅读器",
     "license": "Freeware",
-    "version": "3.0.0.2007",
-    "url": "http://dl.jisupdf.com/jisupdf_setup_3.0.0.2007.exe#/dl.7z",
-    "hash": "2ab79fe385cab16a023ff5c22fa1d048fdb67aa61ee611367296de8d75a2b475",
+    "version": "3.0.0.2008",
+    "url": "http://dl.jisupdf.com/jisupdf_setup_3.0.0.2008.exe#/dl.7z",
+    "hash": "231a3d32f48a0583afa0731d967e064c8773b23cbb13800655000c3c77f48e2f",
     "shortcuts": [
         [
             "JisuPdf.exe",
