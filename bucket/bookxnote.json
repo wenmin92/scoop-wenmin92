@@ -2,9 +2,9 @@
     "homepage": "http://www.bookxnote.com",
     "description": "解决从书籍的管理，阅读，划重点，笔记的整理，笔记的云存储，到笔记的导出复习整个学习过程",
     "license": "Shareware",
-    "version": "1.0.0.173",
-    "url": "http://www.bookxnote.com/setup/bookxnote-windows-x86-1.0.0.173-20200407.zip",
-    "hash": "555c883a5c8a0bc6c2a0a23e5801dd7c7eb2ddaa271abfe59123550d045c04c2",
+    "version": "1.0.0.185",
+    "url": "http://www.bookxnote.com/setup/bookxnote-windows-x86-1.0.0.185-20200508.zip",
+    "hash": "2df3bcae91cbda4cc13d6267ce85addf9364a45ca0f6435a43790b83e9d4b096",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\bookxnote-*.exe\" -Removal",
