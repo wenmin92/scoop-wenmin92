@@ -1,5 +1,5 @@
 {
-    "version": "4.2.0",
+    "version": "5.0.0",
     "description": "和彩云",
     "homepage": "https://caiyun.feixin.10086.cn/downloadClient.jsp",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://caiyun.feixin.10086.cn/law.jsp"
     },
     "url": "https://img.zone139.com/m2012/controlupdate/current/mCloud_Setup.exe#/dl.7z",
-    "hash": "667b4559c5364e3fc5a32a4cb1940b07b3279a0442d2bdb003193df2712f5ffd",
+    "hash": "fc79c48cc39dfe5a15ec25fd89f03d3ca75942eef77d71d5d6d9f3efaf228e96",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\app.7z\" \"$dir\" -Removal",
