@@ -18,7 +18,7 @@
     "installer": {
         "script": [
             "Rename-Item \"$dir\\小米云服务.exe\" \"$dir\\xiaomicloud.exe\" -Force",
-            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\", \"$dir\\SHCore.dll\" -Force -Recurse"
+            "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
         ]
     },
     "bin": "xiaomicloud.exe",
