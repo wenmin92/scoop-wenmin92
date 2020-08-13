@@ -1,17 +1,17 @@
 {
-    "version": "1.0.16",
+    "version": "1.1.2",
     "description": "小米云服务",
     "homepage": "https://i.mi.com/static2?filename=MicloudWebStatic/res/home/mi-lab.htm",
     "license": "Shareware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/x64/XiaomiCloud-1.0.16.exe#/dl.7z",
-            "hash": "87b4950604dbaf0cb3264b5c65fcf226ea416f010d7fbfa67ddc5f4be130ade2",
+            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/x64/XiaomiCloud-1.1.2.exe#/dl.7z",
+            "hash": "3ff30f0c9f5a8e84125cdf8dab5a7c4b5cb58462b7ddcaa9456af39fc0f3e2cd",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
         },
         "32bit": {
-            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/ia32/XiaomiCloud-1.0.16.exe#/dl.7z",
-            "hash": "266497ee70ba2fb687893e553ddb238b6f75efe92ed5219be26eab5208f9f9d0",
+            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/ia32/XiaomiCloud-1.1.2.exe#/dl.7z",
+            "hash": "0a8a4f66d9f759f0c8862773942466accf0c96125831c5d04c8adbcc5110030b",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
         }
     },
