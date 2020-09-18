@@ -1,0 +1,42 @@
+{
+    "version": "1.1.2",
+    "description": "小米云服务",
+    "homepage": "https://i.mi.com/static2?filename=MicloudWebStatic/res/home/mi-lab.htm",
+    "license": "Shareware",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/x64/XiaomiCloud-1.1.2.exe#/dl.7z",
+            "hash": "3ff30f0c9f5a8e84125cdf8dab5a7c4b5cb58462b7ddcaa9456af39fc0f3e2cd",
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+        "32bit": {
+            "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/ia32/XiaomiCloud-1.1.2.exe#/dl.7z",
+            "hash": "0a8a4f66d9f759f0c8862773942466accf0c96125831c5d04c8adbcc5110030b",
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
+        }
+    },
+    "installer": {
+        "script": [
+            "Rename-Item \"$dir\\小米云服务.exe\" \"$dir\\xiaomicloud.exe\" -Force",
+            "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
+        ]
+    },
+    "bin": "xiaomicloud.exe",
+    "shortcuts": [
+        [
+            "xiaomicloud.exe",
+            "Xiaomi Cloud"
+        ]
+    ],
+    "checkver": "XiaomiCloud-([\\d.]+)\\.exe",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/x64/XiaomiCloud-$version.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://cdn.cnbj1.fds.api.mi-img.com/archive/win32/ia32/XiaomiCloud-$version.exe#/dl.7z"
+            }
+        }
+    }
+}
