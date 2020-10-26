@@ -1,12 +1,12 @@
 {
     "homepage": "http://www.duitasiwei.com",
-    "version": "1.1.1",
+    "version": "1.3.0",
     "license": "Freeware",
     "description": "提供了PDF阅读、脑图制作、卡片记忆等工具，为知识的采集、整理、记忆等过程提供了辅助支撑",
     "architecture": {
         "64bit": {
-            "url": "http://www.duitasiwei.com/win/%E5%A0%86%E5%A1%94%E6%80%9D%E7%BB%B4%20Setup%201.1.1.exe#/dl.7z",
-            "hash": "sha512:8aeff34b1d0d1d26d6d6fbe96a3a90a3b50459d0150e2ec791b81cfce4a2959424f14af78ef8f23a7cdbb47eab8d2f5ae321f5e90fec5581c8e749a7ed0e1176",
+            "url": "http://www.duitasiwei.com/win/%E5%A0%86%E5%A1%94%E6%80%9D%E7%BB%B4%20Setup%201.3.0.exe#/dl.7z",
+            "hash": "sha512:1169aa7c6ea10f025fc3b6b8d512cf0643687e78efa8a1a43f0b64d2fc8f00885afa266ec8fb6c3dadb83bfe5f24b35114a03bd5401672c7cb9f5fe90f6327e8",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
