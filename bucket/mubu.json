@@ -2,9 +2,9 @@
     "homepage": "https://mubu.com/",
     "description": "一款以层级折叠式文字来整理内容的大纲文档工具",
     "license": "Shareware",
-    "version": "2.0.1",
-    "url": "http://lf6-ttcdn-tos.pstatp.com/obj/mubu-img/client/Mubu-2.0.1.exe#/dl.7z",
-    "hash": "a6c88a3f840303afd34eef258f1ec0481ca202f0f375dcb3ac25ffc1677f8199",
+    "version": "2.1.0",
+    "url": "http://lf6-ttcdn-tos.pstatp.com/obj/mubu-img/client/Mubu-2.1.0.exe#/dl.7z",
+    "hash": "e5aafd9e65f83c14e65a47d4ac59a6001278dd22c52f54f30e2daff9ecdf13e0",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
