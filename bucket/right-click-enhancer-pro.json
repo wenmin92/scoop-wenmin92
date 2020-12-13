@@ -1,0 +1,21 @@
+{
+    "homepage": "https://rbsoft.org/downloads/right-click-enhancer",
+    "version": "4.5.6.0",
+    "description": "A Control Panel for right click menu on Windows",
+    "license": "Proprietary",
+    "url": "https://rbsoft.org/downloads/right-click-enhancer/Right-Click-Enhancer-Professional.zip",
+    "hash": "05970d51ea1c7eb37f0473aa5ba0eca3675268af2053e8ca93d0851a447c9897",
+    "shortcuts": [
+        [
+            "Right Click Enhancer Professional.exe",
+            "Right Click Enhancer Professional"
+        ]
+    ],
+    "checkver": {
+        "url": "https://rbsoft.org/updates/right-click-enhancer-professional-portable.xml",
+        "re": "<version>([\\d.]+)</version>"
+    },
+    "autoupdate": {
+        "url": "https://rbsoft.org/downloads/right-click-enhancer/Right-Click-Enhancer-Professional.zip"
+    }
+}
