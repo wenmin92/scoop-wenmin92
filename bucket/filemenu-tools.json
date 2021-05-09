@@ -1,10 +1,10 @@
 {
-    "version": "7.8.2",
+    "version": "7.8.4",
     "description": "Customize the context menu of Windows File Explorer",
     "homepage": "https://lopesoft.com/index.php/en/filemenutools",
     "license": "Proprietary",
     "url": "https://lopesoft.com/fmtools/FileMenuTools-portable.exe#/dl.7z",
-    "hash": "204fd86ae47574612c179a88718891b72d6aa295c382058e852a1531ec6f3b49",
+    "hash": "adeb58d4ff4bf318300e0730bbaf89aaac49618e62424d07a2b0bd693086da40",
     "architecture": {
         "64bit": {
             "bin": [
