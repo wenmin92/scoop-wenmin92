@@ -3,8 +3,8 @@
     "homepage": "http://www.torchsoft.com/en/rw_information.html",
     "license": "Shareware",
     "url": "http://www.torchsoft.com/download/RegistryWorkshop.exe#/dl.7z",
-    "version": "5.0.1",
-    "hash": "cabbb998557c5e883200d082853ca0db1a9f0db66332a0731019b7485c2e95d0",
+    "version": "5.1.0",
+    "hash": "deb01b9d23f8b3da9dfdca87f5ca8e751abd803fc37b0927060500ac52d54a4c",
     "architecture": {
         "64bit": {
             "bin": [
