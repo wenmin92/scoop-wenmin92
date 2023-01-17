@@ -1,0 +1,26 @@
+{
+    "homepage": "https://www.cnblogs.com/pdfpatcher",
+    "description": "一个用于修改PDF文件信息的工具",
+    "license": "Freeware",
+    "version": "0.6.2.3572",
+    "url": "http://app.qiniu.wenmin92.cc/PDFPatcher.0.6.2.3572.7z",
+    "hash": "59155630097f2a9ac1fafeb8da033996c0f3d6916e29b054f6fd0b446d420285",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\AppConfig.json\")) { New-Item \"$dir\\AppConfig.json\" | Out-Null }"
+    ],
+    "shortcuts": [
+        [
+            "PDFPatcher.exe",
+            "PDFPatcher"
+        ]
+    ],
+    "persist": [
+        "AppConfig.json"
+    ],
+    "checkver": {
+        "regex": "测试版.{0,2}?([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://app.qiniu.wenmin92.cc/PDFPatcher.$version.7z"
+    }
+}

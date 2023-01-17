@@ -1,0 +1,34 @@
+{
+    "version": "3.9.940",
+    "description": "高效易用的自动标注工具, 生成前端代码, 设计研发协作利器",
+    "homepage": "https://www.fancynode.com.cn/pxcook",
+    "license": "Shareware",
+    "architecture": {
+        "64bit": {
+            "url": "https://assets.fancynode.com.cn/pxcook/client/win64/PxCook_v3.9.940_build_201911131134_x64.exe",
+            "hash": "75fa64df85f41c95a03fc03c3f925da1a91ec37e64d65cf74b979886f8208430"
+        },
+        "32bit": {
+            "url": "https://assets.fancynode.com.cn/pxcook/client/win32/PxCook_v3.9.940_build_201911131134_x86.exe",
+            "hash": "8f110236dc9e1dd7e9c29b58166dec0e3aed8323199434ac3991530fc3c65e25"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "PxCook.exe",
+            "PxCook"
+        ]
+    ],
+    "checkver": "PxCook_v([\\d.]+)_build_(?<date>\\d+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://assets.fancynode.com.cn/pxcook/client/win64/PxCook_v$version_build_$matchDate_x64.exe"
+            },
+            "32bit": {
+                "url": "https://assets.fancynode.com.cn/pxcook/client/win32/PxCook_v$version_build_$matchDate_x86.exe"
+            }
+        }
+    }
+}

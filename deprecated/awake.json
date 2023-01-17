@@ -1,0 +1,20 @@
+{
+    "homepage": "https://daydownloads.com/awake/",
+    "description": "Prevent computer from going into idle or sleep mode",
+    "license": "Freeware",
+    "version": "1.01",
+    "url": "https://daydownloads.com/download/files/Awake.exe",
+    "hash": "f6ed512dc6c1186b66ffa02ffc1163860e4dd99038c0c91761a5ff436c9bb1d8",
+    "shortcuts": [
+        [
+            "Awake.exe",
+            "Awake"
+        ]
+    ],
+    "checkver": {
+        "regex": "Version:</span>([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://daydownloads.com/download/files/Awake.exe"
+    }
+}

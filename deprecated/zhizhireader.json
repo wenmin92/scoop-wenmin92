@@ -1,0 +1,23 @@
+{
+    "homepage": "https://www.zhizhireader.com",
+    "description": "基于读书笔记的知识管理软件",
+    "license": "Shareware",
+    "version": "1.5.0.7",
+    "url": "https://github.com/zhizhiyuedu/zhizhiyuedu.github.io/releases/download/1.5.0.7/Zhizhi.Reader.1.5.0.7.exe#/dl.7z",
+    "hash": "",
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*\" -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "ZhizhiReader.exe",
+            "ZhizhiReader"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/zhizhiyuedu/zhizhiyuedu.github.io"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zhizhiyuedu/zhizhiyuedu.github.io/releases/download/$version/Zhizhi.Reader.$version.exe#/dl.7z"
+    }
+}

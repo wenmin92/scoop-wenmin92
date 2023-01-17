@@ -1,0 +1,19 @@
+{
+    "homepage": "https://www.leetao94.cn/kindlehelper",
+    "description": "一款搜书软件，所有的资源均来自搜索引擎结果",
+    "license": "Freeware",
+    "version": "1.0.0",
+    "url": "http://app.qiniu.wenmin92.cc/KindleHelper_v1.0.0.zip",
+    "hash": "sha1:9A1B015B0A8DEDB71732DA112564FB918782A770",
+    "shortcuts": [
+        [
+            "KindleHelper.exe",
+            "KindleHelper"
+        ]
+    ],
+    "persist": [
+        "config",
+        "data",
+        "downloads"
+    ]
+}

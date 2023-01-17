@@ -1,0 +1,22 @@
+{
+    "version": "2.0.2.7",
+    "description": "Professional file download and sharing tools",
+    "homepage": "https://xdown.org/",
+    "license": "Freeware",
+    "url": "https://dl.xdown.org/windows/i386/xdown-2.0.2.7.zip",
+    "hash": "0b3d2f96abd2be604f73b6a3d93879986bde03b3339326d62d5d34fa37af4a4b",
+    "extract_dir": "xdown",
+    "shortcuts": [
+        [
+            "XDown.exe",
+            "XDown"
+        ]
+    ],
+    "checkver": {
+        "url": "https://xdown.org/Updatelog/",
+        "regex": "([\\d+.]+)\\s*（[-\\d]{10}）\\s*\\[[Ww]indows\\]"
+    },
+    "autoupdate": {
+        "url": "https://dl.xdown.org/windows/i386/xdown-$version.zip"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "version": "5.0.0",
+    "description": "和彩云",
+    "homepage": "https://caiyun.feixin.10086.cn/downloadClient.jsp",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://caiyun.feixin.10086.cn/law.jsp"
+    },
+    "url": "https://img.zone139.com/m2012/controlupdate/current/mCloud_Setup.exe#/dl.7z",
+    "hash": "fc79c48cc39dfe5a15ec25fd89f03d3ca75942eef77d71d5d6d9f3efaf228e96",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\app.7z\" \"$dir\" -Removal",
+            "Remove-Item \"$dir\\`$*\", \"$dir\\mail.ico\", \"$dir\\139_shotcut.ico\" -Force -Recurse",
+            "if (!(Test-Path \"$persist_dir\\calendar.db\")) { New-Item \"$dir\\calendar.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\clouddb.db\")) { New-Item \"$dir\\clouddb.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\contact.db\")) { New-Item \"$dir\\contact.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\fts.db\")) { New-Item \"$dir\\fts.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\maildb.db\")) { New-Item \"$dir\\maildb.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\notedb.db\")) { New-Item \"$dir\\notedb.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\noteftsdb.db\")) { New-Item \"$dir\\noteftsdb.db\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\debug.log\")) { New-Item \"$dir\\debug.log\" | Out-Null }"
+        ]
+    },
+    "bin": "139Mail.exe",
+    "shortcuts": [
+        [
+            "139Mail.exe",
+            "139Mail"
+        ]
+    ],
+    "persist": [
+        "config",
+        "crashlogs",
+        "log",
+        "storage",
+        "calendar.db",
+        "clouddb.db",
+        "contact.db",
+        "fts.db",
+        "maildb.db",
+        "notedb.db",
+        "noteftsdb.db",
+        "debug.log"
+    ],
+    "checkver": "strVersion = 'V([\\d.]+)'",
+    "autoupdate": {
+        "url": "https://img.zone139.com/m2012/controlupdate/current/mCloud_Setup.exe#/dl.7z"
+    }
+}

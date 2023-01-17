@@ -1,0 +1,25 @@
+{
+    "homepage": "https://www.jisupdf.com/?ac=pdf",
+    "description": "一款闪电般好用的PDF阅读器",
+    "license": "Freeware",
+    "version": "3.0.0.2015",
+    "url": "http://dl.jisupdf.com/jisupdf_setup_3.0.0.2015.exe#/dl.7z",
+    "hash": "7d9a3dca8183c2bfe42d35102ec7bf6994fa6977a5085afa0f7b88ee842471bc",
+    "shortcuts": [
+        [
+            "JisuPdf.exe",
+            "JisuPdf"
+        ]
+    ],
+    "post_install": [
+        "Remove-Item \"$dir\\`$APPDATA\\jisupdf\\`$APPDATA\" -Recurse",
+        "if(!(Test-Path \"$Env:APPDATA\\jisupdf\")) { Move-Item \"$dir\\`$APPDATA\\jisupdf\" \"$Env:APPDATA\" -Force }",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
+    ],
+    "checkver": {
+        "regex": "setup_([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "http://dl.jisupdf.com/jisupdf_setup_$version.exe#/dl.7z"
+    }
+}

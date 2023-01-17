@@ -1,0 +1,52 @@
+{
+    "homepage": "https://www.sweetscape.com/010editor",
+    "version": "11.0.1",
+    "description": "Professional Text Editor + World's Best Hex Editor",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.sweetscape.com/store"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.sweetscape.com/download/010EditorWin64Portable.exe",
+            "hash": "1f2450e882310a44d576911cb94acb5b05457b4f24778bf59206455faacedc97"
+        },
+        "32bit": {
+            "url": "https://www.sweetscape.com/download/010EditorWin32Portable.exe",
+            "hash": "606d6b967b85555356bce137711b725a15c444a0283272cfafa9acc9ac9019cd"
+        }
+    },
+    "innosetup": "true",
+    "bin": [
+        [
+            "010EditorPortable.exe",
+            "010editor"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "010EditorPortable.exe",
+            "010 Editor"
+        ]
+    ],
+    "persist": [
+        "AppData\\Data",
+        "AppData\\Config",
+        "010 Templates",
+        "010 Scripts"
+    ],
+    "checkver": {
+        "url": "https://www.sweetscape.com/download/010editor",
+        "re": "Version: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.sweetscape.com/download/010EditorWin64Portable.exe"
+            },
+            "32bit": {
+                "url": "https://www.sweetscape.com/download/010EditorWin32Portable.exe"
+            }
+        }
+    }
+}

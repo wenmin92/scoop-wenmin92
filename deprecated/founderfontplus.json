@@ -1,0 +1,28 @@
+{
+    "homepage": "https://www.foundertype.com/index.php/Index/ftXplorer",
+    "description": "字加是一款字体获取工具、字体使用工具、字体管理工具，旨在提供更高效、更便捷的用字服务",
+    "license": "Freeware",
+    "version": "0.9.9.7",
+    "url": "http://cdn1.foundertype.com/fontcool/download/windows/0.9.9.7/FounderFont_0.9.9.7.exe#/dl.7z",
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*\" -Recurse",
+    "hash": "fd402efb2a462390005d87d240c68e7c45f5daca7e130c1f2d100919957bc1e8",
+    "shortcuts": [
+        [
+            "FounderFontPlus.Update.exe",
+            "FounderFontPlus"
+        ]
+    ],
+    "persist": [
+        "User",
+        "Font",
+        "Log",
+        "Config.xml",
+        "fonts.sqlite"
+    ],
+    "checkver": {
+        "regex": "FounderFont_([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "http://cdn1.foundertype.com/fontcool/download/windows/$version/FounderFont_$version.exe#/dl.7z"
+    }
+}

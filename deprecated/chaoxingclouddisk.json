@@ -1,0 +1,22 @@
+{
+    "homepage": "https://mooc1.chaoxing.com/yunpan",
+    "description": "A cloud drive.",
+    "license": "Proprietary",
+    "version": "4.3.2.22874",
+    "url": "http://s1.ananas.chaoxing.com/yunpan/ChaoXingYunPan_4.3.2.22874_Unicode.exe#/dl.7z",
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst.exe\" -Recurse",
+    "hash": "2a2da80d29908e14dfe028532f0520f6d22265f2302026f6d66f2830a7207fa5",
+    "shortcuts": [
+        [
+            "ChaoXingCloudDisk.exe",
+            "ChaoXingCloudDisk"
+        ]
+    ],
+    "checkver": {
+        "url": "http://pan.ananas.chaoxing.com/floder/downloadurl",
+        "jsonpath": "$.versions"
+    },
+    "autoupdate": {
+        "url": "http://s1.ananas.chaoxing.com/yunpan/ChaoXingYunPan_$version_Unicode.exe#/dl.7z"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "version": "4.5.11",
+    "description": "An eBook reader across formats",
+    "homepage": "https://www.adobe.com/cn/solutions/ebook/digital-editions.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.adobe.com/cn/solutions/ebook/digital-editions/faq.html#licensing"
+    },
+    "url": "https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_4.5_Installer.exe#/dl.7z",
+    "hash": "a21a9d5389728fdac6a7288953dddeea774ef2bee07f1caf7ea20bbed8f5a2c6",
+    "installer": {
+        "script": "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Recurse"
+    },
+    "shortcuts": [
+        [
+            "DigitalEditions.exe",
+            "Adobe Digital Editions"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.adobe.com/cn/solutions/ebook/digital-editions/download.html",
+        "regex": "Adobe Digital Editions ([\\d.]+) Installers"
+    },
+    "autoupdate": {
+        "url": "https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_$majorVersion.$minorVersion_Installer.exe#/dl.7z"
+    }
+}

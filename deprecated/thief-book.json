@@ -1,0 +1,37 @@
+{
+    "homepage": "https://github.com/cteamx/Thief-Book",
+    "description": "一款可以在任务栏、桌面、TouchBar上进行摸鱼的最强的跨平台摸鱼神器，支持小说、股票、按键翻页、鼠标翻页、自动翻页",
+    "version": "3.2.0",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cteamx/Thief-Book/releases/download/3.2.0/thief-book-3.2.0-win64.zip",
+            "hash": "8dd02c5a2517d808b2a0e6e65a491b2dc48b45994132e4086b235e05715f7199",
+            "extract_dir": "thief-book-3.2.0-win64"
+        },
+        "32bit": {
+            "url": "https://github.com/cteamx/Thief-Book/releases/download/3.2.0/thief-book-3.2.0-win32.zip",
+            "hash": "0568d899b27f7594cea6f7f364dfc0f09e9d37c80603e350fbf1809188a3fa3e",
+            "extract_dir": "thief-book-3.2.0-win32"
+        }
+    },
+    "shortcuts": [
+        [
+            "thief-book.exe",
+            "Thief-Book"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cteamx/Thief-Book/releases/download/$version/thief-book-$version-win64.zip",
+                "extract_dir": "thief-book-$version-win64"
+            },
+            "32bit": {
+                "url": "https://github.com/cteamx/Thief-Book/releases/download/$version/thief-book-$version-win32.zip",
+                "extract_dir": "thief-book-$version-win32"
+            }
+        }
+    }
+}
